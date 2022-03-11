@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Solution {
     public static String getSmallestAndLargest(String s, int k) {
@@ -25,11 +26,7 @@ public class Solution {
         System.out.println("---------------");
 
         System.out.print("Substrings: ");
-        for (int i = 0; i < array.length - 1; i++)
-        {
-            System.out.print(array[i] + " + ");
-        }
-        System.out.println(array[array.length - 1]);
+        System.out.println(Arrays.toString(array));
 
         return "Smallest: " + smallest + "\n" + "Largest: " + largest;
     }
